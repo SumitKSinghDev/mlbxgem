@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Live Game Stats</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚾ MLB Live Game Stats</h1>
+        
+        <div class="input-group">
+            <label for="gameId">Enter Game ID:</label>
+            <input type="text" id="gameId" placeholder="e.g., 716467">
+            <button id="fetchData">Get Live Data</button>
+        </div>
+
+        <div id="gameInfo" class="hidden">
+            <h2>Game Details</h2>
+            <div class="stats">
+                <p><strong>Status:</strong> <span id="gameStatus">Waiting for input...</span></p>
+                <p><strong>Home Team:</strong> <span id="homeTeam">-</span></p>
+                <p><strong>Away Team:</strong> <span id="awayTeam">-</span></p>
+                <p><strong>Score:</strong> <span id="score">-</span></p>
+                <p><strong>Current Inning:</strong> <span id="inning">-</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="./script1.js"></script>
+</body>
+</html>
